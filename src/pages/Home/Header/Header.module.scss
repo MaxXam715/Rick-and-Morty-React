@@ -1,0 +1,33 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 580px;
+  background-color: #fff;
+
+  .heading {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 30px;
+    font-size: 100px;
+    color: rgb(32, 35, 41);
+    font-weight: 800;
+
+    .part {
+      color: #71b7ff;
+    }
+  }
+
+  .ram_cover {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: auto;
+    height: 90%;
+    transform: translateX(-50%);
+  }
+}

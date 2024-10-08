@@ -1,0 +1,87 @@
+.character_card {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  background: rgb(60, 62, 68);
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  overflow: hidden;
+
+  .avatar {
+    width: auto;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  .info_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-gap: 20px;
+    padding: 14px;
+
+    .params_wrapper {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 4px;
+
+      .name {
+        font-size: 27px;
+        color: #f5f5f5;
+        font-weight: 800;
+
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+        &:hover {
+          color: var(--orange);
+          cursor: pointer;
+        }
+      }
+
+      .status {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: #f5f5f5;
+        font-weight: bold;
+
+        .circle {
+          width: 10px;
+          aspect-ratio: 1 / 1;
+          border-radius: 50px;
+          margin-right: 10px;
+
+          &.Alive {
+            background-color: #55cc44;
+          }
+
+          &.Dead {
+            background-color: #d63d2e;
+          }
+
+          &.unknown {
+            background-color: #9e9e9e;
+          }
+        }
+      }
+
+      .label {
+        font-size: 16px;
+        color: #9e9e9e;
+      }
+
+      .value {
+        font-size: 18px;
+        color: #f5f5f5;
+
+        &:hover {
+          color: var(--orange);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "./ui/uikit";
+@import "variables.css";
+@import "fonts";
+@import "reset.scss";
+
+body {
+    font-family: "SF Pro Display";
+    margin: 0;
+    padding: 0;
+    background-color: #202329;
+    color: #fff;
+}
+
+body.no_scroll {
+    padding-right: var(--widthScrollBar);
+}
+
+.no_scroll {
+    overflow: hidden !important;
+}
+
+.hide_scroll {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE, Edge */
+}
+
+.hide_scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+.G_container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+
+    @media (max-width: 1200px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media (max-width: 900px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
